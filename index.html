@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -355,20 +356,6 @@
     background: linear-gradient(135deg, #2a5298, #0d2137);
   }
 
-  .avatar-placeholder {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid var(--gold);
-    margin: 0 auto 16px;
-    background: linear-gradient(135deg, var(--navy-mid), var(--navy-light));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 52px;
-    color: var(--gold);
-    font-weight: 900;
-  }
 
   .hero-card-name {
     font-size: 22px;
@@ -1428,7 +1415,7 @@
 <nav class="navbar">
   <a href="#" class="nav-logo">
     <div class="nav-logo-mark">段</div>
-    <span class="nav-logo-text">段律 <span>· 劳动法专页</span></span>
+    <span class="nav-logo-text">段律 <span>· 实战派律师</span></span>
   </a>
   <ul class="nav-links">
     <li><a href="#about">关于我</a></li>
@@ -1482,7 +1469,7 @@
     <!-- Hero Card -->
     <div class="hero-card">
       <div class="hero-photo-wrap">
-        <div class="avatar-placeholder">段</div>
+        <img class="hero-avatar" src="avatar.jpg" alt="段寿元律师">
         <div class="hero-card-name">段寿元律师</div>
         <div class="hero-card-title">执业律师 · 企业法律顾问</div>
         <div class="hero-badges">
@@ -1497,7 +1484,7 @@
           <div class="contact-icon">📱</div>
           <div>
             <div style="font-size:13px; color:rgba(255,255,255,0.45);margin-bottom:2px;">手机/微信</div>
-            <div style="font-size:16px;font-weight:700;color:#fff;">18098958656</div>
+            <div style="font-size:16px;font-weight:700;color:#fff;">13713802114</div>
           </div>
         </div>
         <div class="contact-item">
@@ -1511,7 +1498,7 @@
           <div class="contact-icon">💬</div>
           <div>
             <div style="font-size:13px; color:rgba(255,255,255,0.45);margin-bottom:2px;">公众号</div>
-            <div style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);">段律</div>
+            <div style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);">深圳段寿元律师</div>
           </div>
         </div>
       </div>
@@ -1738,7 +1725,7 @@
     <div class="section-header">
       <div class="section-label">文章专栏</div>
       <h2 class="section-title">真实案例 × 法律解读<br>每篇都是一颗雷的拆解说明书</h2>
-      <p class="section-sub">来自"段律"公众号的原创内容，以老板视角讲清楚每一个用工风险点</p>
+      <p class="section-sub">来自"深圳段寿元律师"公众号的原创内容，以老板视角讲清楚每一个用工风险点</p>
     </div>
 
     <div class="articles-filter">
@@ -1754,37 +1741,37 @@
     <div class="articles-grid" id="articlesGrid">
 
       <!-- Article 1 -->
-      <div class="article-card" data-cat="dismiss">
+      <div class="article-card" data-cat="contract">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-dismiss">离职管理</span>
-            <span class="article-date">2026-03-21</span>
+            <span class="article-cat cat-contract">合同管理</span>
+            <span class="article-date">2026-05-09</span>
           </div>
-          <div class="article-title">员工离职后反手一刀？老板最怕的5大用工雷区</div>
+          <div class="article-title">员工签字放弃社保，公司就安全了？两个高院案例告诉你这纸承诺等于废纸</div>
         </div>
         <div class="article-excerpt">
-          超过70%的劳动争议发生在员工离职之后。劳动合同不续签以为"自然终止"、加班费用绩效冲抵、口头辞退不出书面……这5个常规操作，你的公司中了几条？
+          员工自愿签了《自愿放弃社保承诺书》，公司以为万事大吉。两个高院案例却给出明确结论：无论员工是否签字，社保补缴义务不可免除，甚至还要承担滞纳金。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 5大雷区 · 实操建议</span>
+          <span class="article-key">📌 社保合规 · 高院案例</span>
           <a href="#" class="article-link" onclick="openArticle('a1'); return false;">阅读全文 →</a>
         </div>
       </div>
 
       <!-- Article 2 -->
-      <div class="article-card" data-cat="dismiss">
+      <div class="article-card" data-cat="contract">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-dismiss">离职管理</span>
-            <span class="article-date">2026-03-22</span>
+            <span class="article-cat cat-contract">合同管理</span>
+            <span class="article-date">2026-05-08</span>
           </div>
-          <div class="article-title">员工说"我要走"就没事了？老板最容易中招的3大离职陷阱</div>
+          <div class="article-title">员工拒绝调岗不去报到，公司能开除吗？5个案例法院全站公司</div>
         </div>
         <div class="article-excerpt">
-          员工口头提辞职，企业以为稳了——结果对方反悔、主张被迫离职，索赔赔偿金。离职流程看似简单，实则每一步都是雷区。
+          五一前后连续5个调岗案例，法院一致支持企业。但前提是：调岗必须具备合理性和必要性。盲目调岗、恶意降薪式调岗，一样会被判违法解除。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 离职陷阱 · 证据留存</span>
+          <span class="article-key">📌 调岗合规 · 裁判趋势</span>
           <a href="#" class="article-link" onclick="openArticle('a2'); return false;">阅读全文 →</a>
         </div>
       </div>
@@ -1794,105 +1781,105 @@
         <div class="article-card-head">
           <div class="article-meta">
             <span class="article-cat cat-compete">竞业限制</span>
-            <span class="article-date">2026-03-23</span>
+            <span class="article-date">2026-05-07</span>
           </div>
-          <div class="article-title">签了竞业协议，反被员工告倒？中小企业最常踩的3个坑</div>
+          <div class="article-title">企业竞业限制协议六大陷阱：北京三中院2026年最新裁判口径出炉</div>
         </div>
         <div class="article-excerpt">
-          企业花大力气让员工签了竞业协议，以为高枕无忧——结果因为补偿金没约定清楚、条款无效、范围过宽，反而成了被告。
+          北京三中院最新发布的竞业限制裁判口径，揭示了企业在竞业协议中常见的六大陷阱：补偿金标准、违约金比例、范围界定、解除权行使……每一个都可能让协议变废纸。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 条款效力 · 补偿金陷阱</span>
+          <span class="article-key">📌 竞业限制 · 最新裁判口径</span>
           <a href="#" class="article-link" onclick="openArticle('a3'); return false;">阅读全文 →</a>
         </div>
       </div>
 
       <!-- Article 4 -->
-      <div class="article-card" data-cat="wage">
+      <div class="article-card" data-cat="injure">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-wage">薪酬管理</span>
-            <span class="article-date">2026-03-24</span>
+            <span class="article-cat cat-injure">工伤管理</span>
+            <span class="article-date">2026-05-06</span>
           </div>
-          <div class="article-title">员工下班后还在微信群回消息，出了事谁来担责？</div>
+          <div class="article-title">买了商业保险就能抵工伤赔偿？三个案例告诉你：关键看险种</div>
         </div>
         <div class="article-excerpt">
-          隐形加班是当下劳动争议新热点。员工在家用手机处理工作，算不算加班？企业如何举证？法院怎么判？一文说清楚。
+          很多企业以为给员工买了商业意外险就不用管工伤了。三个真实案例告诉你：雇主责任险和意外伤害险的效果完全不同，买错了险种等于白买。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 隐形加班 · 新司法实践</span>
+          <span class="article-key">📌 工伤保险 · 险种差异</span>
           <a href="#" class="article-link" onclick="openArticle('a4'); return false;">阅读全文 →</a>
         </div>
       </div>
 
       <!-- Article 5 -->
-      <div class="article-card" data-cat="wage">
+      <div class="article-card" data-cat="contract">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-wage">薪酬管理</span>
-            <span class="article-date">2026-03-25</span>
+            <span class="article-cat cat-contract">合同管理</span>
+            <span class="article-date">2026-05-05</span>
           </div>
-          <div class="article-title">老板注意！这样调薪、扣薪，员工可以直接告你</div>
+          <div class="article-title">公司跨市调岗，员工拒绝被开除，法院：违法解除赔9.8万</div>
         </div>
         <div class="article-excerpt">
-          调薪看似是企业内部管理行为，但单方降薪、绩效扣减操作不当，都可能构成违法，让员工有权主张被迫解除、索赔赔偿金。
+          公司以业务调整为由将员工从深圳调至广州，员工拒绝报到后被开除。法院认定跨市调岗未经协商，且未提供合理补偿，构成违法解除，判赔9.8万元。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 调薪合规 · 违法边界</span>
+          <span class="article-key">📌 调岗合理性 · 违法解除</span>
           <a href="#" class="article-link" onclick="openArticle('a5'); return false;">阅读全文 →</a>
         </div>
       </div>
 
       <!-- Article 6 -->
-      <div class="article-card" data-cat="injure">
+      <div class="article-card" data-cat="dismiss">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-injure">工伤管理</span>
-            <span class="article-date">2026-03-26</span>
+            <span class="article-cat cat-dismiss">离职管理</span>
+            <span class="article-date">2026-05-05</span>
           </div>
-          <div class="article-title">员工上下班途中出了事故，老板要赔多少钱？</div>
+          <div class="article-title">员工请病假却跨省看演唱会被辞退，法院为何支持公司？</div>
         </div>
         <div class="article-excerpt">
-          工伤认定标准：上下班途中、突发疾病，到底算不算工伤？不同情形下企业的赔偿责任差异悬殊，一文彻底理清。
+          销售总监以"腰椎间盘突出需卧床休养"为由请病假，却跨省看演唱会。公司解除合同，员工反手申请仲裁。最高人民法院发布典型案例，两审法院均支持公司。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 工伤认定 · 赔偿标准</span>
+          <span class="article-key">📌 病假管理 · 最高法案例</span>
           <a href="#" class="article-link" onclick="openArticle('a6'); return false;">阅读全文 →</a>
         </div>
       </div>
 
       <!-- Article 7 -->
-      <div class="article-card" data-cat="dismiss">
+      <div class="article-card" data-cat="trial">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-dismiss">离职管理</span>
-            <span class="article-date">2026-03-27</span>
+            <span class="article-cat cat-trial">试用期</span>
+            <span class="article-date">2026-05-04</span>
           </div>
-          <div class="article-title">老板裁员一步走错，多赔几十万？N和2N傻傻分不清</div>
+          <div class="article-title">试用期不是"随意期"！说炒就炒，法院判公司赔偿近1.4万</div>
         </div>
         <div class="article-excerpt">
-          同样是裁员，N和2N的差距可能是几十万。经济补偿金与赔偿金怎么区分？什么情况下赔N，什么情况下赔2N？
+          以为试用期可以随便辞退？公司以"不符合录用条件"为由辞退试用期员工，因无法举证具体录用标准，被法院认定违法解除，判赔近1.4万元。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 裁员赔偿 · N与2N</span>
+          <span class="article-key">📌 试用期辞退 · 录用条件</span>
           <a href="#" class="article-link" onclick="openArticle('a7'); return false;">阅读全文 →</a>
         </div>
       </div>
 
       <!-- Article 8 -->
-      <div class="article-card" data-cat="trial">
+      <div class="article-card" data-cat="dismiss">
         <div class="article-card-head">
           <div class="article-meta">
-            <span class="article-cat cat-trial">试用期</span>
-            <span class="article-date">2026-03-28</span>
+            <span class="article-cat cat-dismiss">离职管理</span>
+            <span class="article-date">2026-05-03</span>
           </div>
-          <div class="article-title">试用期踩雷，老板必看！这4个坑99%的企业都中过</div>
+          <div class="article-title">"15+5"员工不是免死金牌！天津高院：严重违纪照样合法开除</div>
         </div>
         <div class="article-excerpt">
-          试用期辞退员工赔了47万！真实案例揭示：违法约定试用期、以考核不达标为由辞退、试用期内不缴社保……每一个坑都是真实的。
+          员工在本单位连续工作满15年且距退休不足5年，企业就不能解除了？天津高院明确：严重违反规章制度，法定保护情形不免除开除后果。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 试用期风险 · 实操要点</span>
+          <span class="article-key">📌 严重违纪 · 无固定期限</span>
           <a href="#" class="article-link" onclick="openArticle('a8'); return false;">阅读全文 →</a>
         </div>
       </div>
@@ -1902,15 +1889,15 @@
         <div class="article-card-head">
           <div class="article-meta">
             <span class="article-cat cat-contract">合同管理</span>
-            <span class="article-date">2026-03-29</span>
+            <span class="article-date">2026-05-01</span>
           </div>
-          <div class="article-title">合同到期了就可以不续签？老板这样操作分分钟被告</div>
+          <div class="article-title">员工不签合同要二倍工资，自己是HR呢？珠海中院最新案例说清楚了</div>
         </div>
         <div class="article-excerpt">
-          合同到期不续签并不等于"什么都不用做"。终止劳动合同的条件、补偿金计算方式、通知期限……一旦程序出错，结果可能是双倍赔偿。
+          员工拒绝签订劳动合同，反过来要求公司支付二倍工资差额——如果这个员工恰好是HR，法院怎么判？珠海中院最新案例给出明确答案。
         </div>
         <div class="article-card-foot">
-          <span class="article-key">📌 合同到期 · 终止赔偿</span>
+          <span class="article-key">📌 二倍工资 · HR特殊责任</span>
           <a href="#" class="article-link" onclick="openArticle('a9'); return false;">阅读全文 →</a>
         </div>
       </div>
@@ -1918,8 +1905,8 @@
     </div><!-- /.articles-grid -->
 
     <div class="articles-more">
-      <a href="https://mp.weixin.qq.com/s" target="_blank" class="btn-primary" style="display:inline-flex;">
-        📱 关注"段律"公众号，查看全部文章
+      <a href="weixin://dl/business/?appid=wxd7760c1a3751f428" target="_blank" class="btn-primary" style="display:inline-flex;">
+        📱 关注"深圳段寿元律师"公众号，查看全部文章
       </a>
     </div>
   </div>
@@ -2010,7 +1997,7 @@
             <div class="contact-card-icon">📱</div>
             <div>
               <div class="contact-card-label">手机 / 微信</div>
-              <div class="contact-card-value">18098958656</div>
+              <div class="contact-card-value">13713802114</div>
               <div class="contact-card-sub">段寿元律师直线</div>
             </div>
           </div>
@@ -2028,7 +2015,7 @@
             <div class="contact-card-icon">💬</div>
             <div>
               <div class="contact-card-label">微信公众号</div>
-              <div class="contact-card-value">段律</div>
+              <div class="contact-card-value">深圳段寿元律师</div>
               <div class="contact-card-sub">每日更新劳动法实务内容</div>
             </div>
           </div>
@@ -2120,7 +2107,7 @@
     </div>
     <div class="modal-body" id="modalBody"></div>
     <div class="modal-foot">
-      <span>来源：段律公众号原创 · 段寿元律师</span>
+      <span>来源：深圳段寿元律师公众号原创 · 段寿元律师</span>
       <a href="#contact" class="modal-foot-cta" onclick="closeModalDirect()">📞 咨询律师 →</a>
     </div>
   </div>
@@ -2152,192 +2139,159 @@ function filterArticles(cat, btn) {
 // Article content data
 const articles = {
   a1: {
-    title: '员工离职后反手一刀？老板最怕的5大用工雷区',
+    title: '员工签字放弃社保，公司就安全了？两个高院案例告诉你这纸承诺等于废纸',
     body: `
-      <p><strong>真实案例 × 法律解读 × 高管视角 | 一文读懂企业用工风险</strong></p>
+      <p><strong>真实案例 × 法律解读 × 老板视角 | 社保放弃承诺书到底有没有用？</strong></p>
 
-      <p>上周，一位老板朋友在电话里跟我诉苦：</p>
-      <div class="scene">
-        "员工干了三年，提出辞职，走得很平静。结果两个月后，劳动仲裁的通知书就来了，说我克扣加班费，要求赔偿4.8万，还要双倍工资！段律，我这叫什么事？"
-      </div>
-      <p>这不是个例。在我处理的企业用工案件中，<strong>超过70%的争议发生在员工离职之后</strong>。</p>
+      <p>很多中小企业为了降低用工成本，会让员工签一份《自愿放弃社保承诺书》，以为有了这张纸就能免除社保缴纳义务。但司法实践告诉我们：<strong>这张纸，等于废纸。</strong></p>
 
-      <h3>【雷区1】劳动合同不续签，以为"自然终止"就没事了</h3>
-      <p>某制造型公司，员工合同到期后继续上班，公司认为"默认续签"，未签新合同。员工工作满11个月后提出仲裁：未签书面合同，索要双倍工资差额约3.2万元。</p>
-      <div class="risk-box">⚠️ 法律风险：《劳动合同法》第82条规定，用人单位超过1个月未签书面劳动合同，须支付双倍工资；超过1年视为签订无固定期限合同。</div>
+      <h3>案例一：员工签字后反悔，法院判公司补缴</h3>
+      <p>某制造企业与员工签订《自愿放弃社保协议》，员工每月领取500元"社保补贴"。工作三年后，员工主动申请劳动仲裁，要求公司补缴社保。仲裁委支持员工请求，认定社保缴纳属于法定义务，不可通过协议免除。</p>
+      <div class="risk-box">⚠️ 《社会保险法》第58条明确规定，用人单位应当自用工之日起30日内为职工办理社保登记。这是强制性法律规定，不能通过双方协议予以排除。</div>
 
-      <h3>【雷区2】加班费用"绩效冲抵"，HR觉得省事</h3>
-      <p>某互联网公司对销售岗位实行"高提成+不计加班"制度。员工离职后以未支付加班费提起仲裁，主张两年加班费差额共计5.6万元，最终公司败诉，赔付4.1万元。</p>
-      <div class="risk-box">⚠️ 只有经劳动行政部门批准实行不定时工作制的岗位，才不适用加班费规定。"绩效冲抵"缺乏法律依据。</div>
-
-      <h3>【雷区3】试用期反复延长，自以为"低风险"</h3>
-      <p>某公司与员工签订三年合同，约定试用期六个月。试用期快满时，以"考核未达标"为由要求再延三个月。</p>
-      <div class="risk-box">⚠️ 试用期只能约定一次。违法约定试用期的，须向员工支付赔偿金。</div>
-
-      <h3>【雷区4】口头辞退员工，不出书面文件</h3>
-      <p>某餐饮公司经营不善，老板口头通知10名员工"不用来了"。因无法举证"合法解除理由"，被判赔偿共计约18万元。</p>
-      <div class="risk-box">⚠️ 解除劳动合同须有合法依据并出具书面通知。违法解除需支付赔偿金（N×2），举证责任在用人单位。</div>
-
-      <h3>【雷区5】规章制度未经民主程序，"内部规定"当摆设</h3>
-      <p>某公司以员工违反"迟到三次即辞退"制度为由解除合同。仲裁委认定该制度未经民主程序、也未向员工公示，解除行为违法，公司赔付员工2.4万元。</p>
-      <div class="risk-box">⚠️ 规章制度须经职工代表大会或全体职工讨论，并向员工公示或告知，方具备法律效力。</div>
+      <h3>案例二：公司以"员工自愿放弃"为由抗辩，高院不予支持</h3>
+      <p>某省级高院在二审判决中明确指出：即使员工签署了放弃社保的书面承诺，用人单位仍需依法补缴社保费用，并承担相应的滞纳金。员工领取的"社保补贴"可从赔偿中扣除，但补缴义务不可免除。</p>
+      <div class="risk-box">⚠️ 社保补缴没有时效限制。员工离职多年后仍可投诉要求补缴，滞纳金按日万分之五计算，时间越长负担越重。</div>
 
       <h3>律师实操建议</h3>
-      <p>从招聘、入职、在职到离职，每个节点都需要建立规范的管控动作。用工管理是一门系统工程——合法 ≠ 合规，合规 ≠ 低风险。</p>
+      <p>与其冒险让员工签放弃社保承诺书，不如依法合规缴纳。如员工坚持不愿缴纳社保，企业应保留催缴通知等证据，并明确告知法律后果，必要时可依据《劳动合同法》第39条处理。</p>
     `
   },
   a2: {
-    title: '员工说"我要走"就没事了？老板最容易中招的3大离职陷阱',
+    title: '员工拒绝调岗不去报到，公司能开除吗？5个案例法院全站公司',
     body: `
-      <p>员工主动提辞职，老板以为"终于可以松口气"。但很多时候，正是这种放松，埋下了后续被仲裁的祸根。</p>
+      <p>调岗是企业用工管理中的常见操作，但也是劳动争议的高发领域。最近连续5个案例，法院一致支持企业的调岗决定，关键在于<strong>调岗的合理性和必要性</strong>。</p>
 
-      <h3>【陷阱1】口头辞职，没有书面记录</h3>
-      <p>员工口头说"我不干了"，过几天反悔，主张从未提过辞职——而公司没有任何书面证据，形势立刻逆转。</p>
-      <div class="risk-box">⚠️ 员工口头辞职一旦无法举证，企业可能被认定为单方解除，须支付赔偿金（2N）。建议要求员工提交书面辞职信，并保留好交接记录。</div>
+      <h3>案例一：业务调整调岗，员工拒绝后旷工被合法开除</h3>
+      <p>公司因业务线调整，将员工从市场部调至销售部，薪资不变。员工拒绝到岗并连续旷工15天。法院认定调岗具有合理性和必要性，员工旷工属于严重违纪，公司解除合同合法。</p>
 
-      <h3>【陷阱2】被迫离职，算企业违法解除</h3>
-      <p>企业对员工拖欠工资、随意调岗或恶意克扣奖金，员工以"被迫"为由提出辞职，仍可主张经济补偿金甚至赔偿金。</p>
-      <div class="risk-box">⚠️ 《劳动合同法》第38条规定：用人单位存在克扣工资、强制加班等行为，员工有权解除合同并获得经济补偿。</div>
+      <h3>案例二：门店关闭调岗至就近门店，法院支持公司</h3>
+      <p>某连锁企业因门店关闭，将员工调至3公里外的另一门店，工作内容不变。员工拒绝报到，法院认定调岗合理，公司解除合法。</p>
 
-      <h3>【陷阱3】离职交接不规范，离职后索赔无据</h3>
-      <p>员工提出辞职后，企业没有完整的工作交接记录，事后发现资料缺失或业务受损，却无法向离职员工追责。</p>
-      <div class="risk-box">⚠️ 建议设计完整的离职交接清单，双方签字确认，明确交接内容和完成时间，为后续维权留好依据。</div>
+      <h3>法院审查调岗合理性的四个维度</h3>
+      <p>① 调岗是否基于企业经营需要或客观情况变化；<br>
+      ② 调岗后薪资待遇是否明显降低；<br>
+      ③ 调岗后工作地点是否造成重大不便；<br>
+      ④ 调岗是否具有侮辱性和惩罚性。</p>
+      <div class="risk-box">⚠️ 企业调岗必须留好书面记录：调岗通知、送达凭证、员工拒签记录等。调岗理由越充分，胜诉概率越高。</div>
 
-      <p>离职管理是企业用工风险的"最后一公里"，也是最容易被忽视的。做好这3点，可以避免大部分离职纠纷。</p>
+      <h3>律师实操建议</h3>
+      <p>调岗前做好充分的合理性论证，书面通知并留痕。员工拒绝到岗后，先发催告函再按旷工处理，程序要完整。切忌"降薪式调岗"和"惩罚式调岗"。</p>
     `
   },
   a3: {
-    title: '签了竞业协议，反被员工告倒？中小企业最常踩的3个坑',
+    title: '企业竞业限制协议六大陷阱：北京三中院2026年最新裁判口径出炉',
     body: `
-      <p>很多企业签竞业协议，是为了保护商业秘密、防止员工跳槽带走客户。但如果条款设计不当，这把"护身符"可能反手变成"烫手山芋"。</p>
+      <p>竞业限制协议是企业保护商业秘密的重要工具，但如果条款设计不当，不仅无法起到保护作用，还可能给企业带来法律风险。北京三中院最新裁判口径揭示了六大常见陷阱。</p>
 
-      <h3>【坑1】忘记约定补偿金，协议直接失效</h3>
-      <p>某公司与高管签订竞业限制协议，但未约定竞业补偿金数额，也未实际支付。员工离职后认为协议无效，直接入职竞争对手。公司提出仲裁，仲裁委认定无补偿约定的竞业协议对员工不具有约束力。</p>
-      <div class="risk-box">⚠️ 《劳动合同法》规定，竞业限制协议必须约定经济补偿，否则员工有权拒绝履行。补偿金标准通常不得低于离职前12个月平均工资的1/3。</div>
+      <h3>陷阱一：补偿金标准过低</h3>
+      <p>协议约定竞业补偿金为离职前工资的10%，远低于法定最低标准30%。法院认定未达到法定标准，员工有权请求解除竞业限制协议。</p>
 
-      <h3>【坑2】竞业范围过宽，条款被认定无效</h3>
-      <p>某互联网公司竞业协议约定员工"离职后2年内不得从事任何互联网相关工作"——因范围过于宽泛，严重限制员工就业权，被法院认定为无效条款。</p>
-      <div class="risk-box">⚠️ 竞业限制范围应与员工岗位相关、与公司实际竞争对手对应。范围过宽将导致条款无效，失去保护意义。</div>
+      <h3>陷阱二：竞业范围与员工岗位不匹配</h3>
+      <p>普通员工（非核心技术人员）被纳入竞业限制范围，法院认为限制过宽，员工就业权受到不当侵害，协议部分无效。</p>
 
-      <h3>【坑3】忘了约定违约金，员工违约无成本</h3>
-      <p>企业约定了竞业限制和补偿金，却未约定员工违反协议的违约金数额，导致即使员工违约，公司也难以主张赔偿——因为损失举证极为困难。</p>
-      <div class="risk-box">⚠️ 竞业协议中应明确约定违约金数额（通常为补偿金的3-5倍），作为违约成本约束，同时明确解除协议的条件。</div>
+      <h3>陷阱三：违约金畸高，被法院调减</h3>
+      <p>协议约定违约金200万元，但员工年薪仅20万元。法院综合考量违约程度、企业损失等因素，将违约金调减至合理水平。</p>
+
+      <h3>其他三大陷阱</h3>
+      <p>④ 未在离职时明确告知竞业义务，员工不知情导致协议履行争议；<br>
+      ⑤ 竞业期限超过法定2年上限，超出部分无效；<br>
+      ⑥ 企业三个月未支付补偿金，员工依法解除权被忽视。</p>
+      <div class="risk-box">⚠️ 竞业限制不是"签了就有效"。条款的每一个细节都可能影响最终的裁判结果。建议在专业律师指导下起草和审核竞业协议。</div>
     `
   },
   a4: {
-    title: '员工下班后还在微信群回消息，出了事谁来担责？',
+    title: '买了商业保险就能抵工伤赔偿？三个案例告诉你：关键看险种',
     body: `
-      <p>"隐形加班"是近年劳动争议的新热点。员工下班后继续用手机处理工作事务，是否构成加班？法律层面已有新的司法实践。</p>
+      <p>不少企业认为给员工买了商业意外险就"万事大吉"，出了工伤有保险赔。但三个真实案例揭示了不同险种之间的巨大差异。</p>
 
-      <h3>最新司法实践：法院如何认定隐形加班</h3>
-      <p>2023年北京法院的一起典型案例中，员工利用微信在非工作时间频繁处理工作事务，法院认定构成加班，判令用人单位支付加班费。这一判决被广泛引用，成为隐形加班认定的重要参考。</p>
-      <div class="scene">
-        核心认定标准：加班是否具有"规律性"和"工作性"——偶尔回复消息不算，频繁、持续、带有工作性质的非工时处理，构成加班。
-      </div>
+      <h3>案例一：买了意外伤害险，仍被判全额承担工伤赔偿</h3>
+      <p>某建筑公司为员工购买了商业意外伤害险。员工在施工中受伤，保险赔了8万元。但员工申请工伤认定后，公司仍需按工伤保险标准赔偿，两笔赔偿不能互相抵扣。公司最终额外赔付12万元。</p>
+      <div class="risk-box">⚠️ 意外伤害险的被保险人是员工本人，赔付款归员工所有，不能替代企业的工伤赔偿责任。买了意外险≠免除了工伤赔偿义务。</div>
 
-      <h3>企业如何规避隐形加班风险</h3>
-      <p>一是建立明确的工作时间制度，规定非工时不得要求员工处理工作；二是在薪酬结构中明确加班费计算机制；三是避免在企业微信群或工作群中要求员工非工时响应。</p>
-      <div class="risk-box">⚠️ 如果企业客观上存在非工时安排工作的惯例，应当在劳动合同或制度中明确约定，并建立对应的加班审批机制，留好记录。</div>
+      <h3>案例二：雇主责任险，保险赔付可抵扣企业赔偿</h3>
+      <p>另一家企业购买的是雇主责任险，员工发生工伤后，保险公司的赔付款可以直接抵扣企业应承担的工伤赔偿金额，大幅降低了企业实际损失。</p>
 
-      <h3>员工在非工时出了意外，算工伤吗？</h3>
-      <p>这取决于事故发生的具体情形。如员工在家处理工作任务期间受伤，需要举证证明与工作任务的直接关联性，认定难度较大，但也有法院支持的先例。建议企业在远程办公制度上提前做好约定。</p>
+      <h3>案例三：未缴工伤保险+无商业保险，企业全额承担</h3>
+      <p>某公司既未给员工缴纳工伤保险，也没有购买任何商业保险。员工发生工伤后，所有工伤待遇均由企业自行承担，包括医疗费、伤残补助金等共计38万元。</p>
+      <div class="risk-box">⚠️ 雇主责任险和意外伤害险虽然名称相似，但法律后果完全不同。企业应优先依法缴纳工伤保险，再考虑用雇主责任险作为补充。</div>
     `
   },
   a5: {
-    title: '老板注意！这样调薪、扣薪，员工可以直接告你',
+    title: '公司跨市调岗，员工拒绝被开除，法院：违法解除赔9.8万',
     body: `
-      <p>调薪看起来是企业内部管理行为，但单方操作不当，就可能触碰劳动合同法的红线。</p>
+      <p>调岗是企业常见的用工管理手段，但跨市调岗涉及员工居住、通勤、家庭等多重因素，法院对合理性的审查更为严格。</p>
 
-      <h3>哪些调薪操作是违法的？</h3>
-      <p>① <strong>未经协商单方降薪</strong>——劳动合同中约定的工资是合同条款，单方变更必须经过协商一致，否则构成违约。<br>
-      ② <strong>以绩效为由频繁克扣工资</strong>——绩效扣减必须有书面绩效考核制度支撑，且制度须经民主程序制定并公示。<br>
-      ③ <strong>调岗同时降薪</strong>——调岗通常被认定为合同变更，需双方同意。强制调岗+降薪，员工可主张被迫解除，要求赔偿金。</p>
-      <div class="risk-box">⚠️ 员工在以上情形下，可依据《劳动合同法》第38条主张被迫解除劳动合同，并要求经济补偿金——甚至在某些情形下可主张赔偿金（2N）。</div>
+      <h3>案情回顾</h3>
+      <p>深圳某科技公司以"业务调整"为由，将一名在深圳工作五年的员工调至广州分公司，岗位不变但薪资结构调整为"底薪+绩效"。员工以调岗影响家庭生活为由拒绝报到，公司以"不服从管理"为由解除劳动合同。</p>
 
-      <h3>合规调薪应该怎么做？</h3>
-      <p>一是在合同中约定薪酬调整机制，明确绩效考核与薪酬挂钩的规则；二是任何薪酬变动均需书面确认，留存员工签字的书面协议；三是绩效考核标准须明确、公示，结果员工签字确认。</p>
+      <h3>争议焦点</h3>
+      <p>公司的跨市调岗是否具备合理性？员工拒绝报到是否构成严重违纪？</p>
 
-      <h3>真实案例</h3>
-      <div class="scene">
-        某科技公司以"公司经营困难"为由，将全员基本工资下调20%，仅发出通知，未征得员工同意。三名员工以"被迫解除"为由申请仲裁，均获支持，公司累计赔付约9.6万元。
-      </div>
+      <h3>法院判决</h3>
+      <p>法院认为：① 公司未能举证调岗的客观必要性；② 跨市调岗对员工生活造成重大影响，公司未提供合理补偿方案（如住房补贴、交通补贴等）；③ 薪资结构调整实质构成降薪。综上，认定公司调岗不合理，解除行为违法，判赔9.8万元。</p>
+      <div class="risk-box">⚠️ 跨市调岗不是不能做，但必须满足更高的合理性标准。建议在调岗通知中附上充分的理由说明，并提供相应的安置补偿方案。</div>
     `
   },
   a6: {
-    title: '员工上下班途中出了事故，老板要赔多少钱？',
+    title: '员工请病假却跨省看演唱会被辞退，法院为何支持公司？',
     body: `
-      <p>工伤认定是企业用工管理中争议最多的领域之一。上下班途中出事算不算工伤？突发疾病呢？不同情形下的结论差异很大。</p>
+      <p>"泡病假"是中小企业最常见的用工痛点之一。员工以病假为由不上班，实际却在旅游、聚会、甚至从事兼职。企业能直接开除吗？最高人民法院发布的这则典型案例给出了明确答案。</p>
 
-      <h3>上下班途中发生事故，哪些算工伤？</h3>
-      <p>根据《工伤保险条例》第14条，上下班途中受到非本人主要责任的交通事故，认定为工伤。关键词：<strong>合理路线 + 非本人主要责任</strong>。</p>
-      <div class="scene">
-        注意：绕道买菜、顺路接娃等偏离上下班路线的行为，可能导致不被认定为工伤。"合理路线"的认定在实践中有弹性空间，建议争议时寻求专业意见。
-      </div>
+      <h3>案情回顾</h3>
+      <p>南京某公司员工周某以"腰椎间盘突出、卧床休养"为由长期申请病假。公司多次提供办公床铺、调整工作量等方案均被拒绝。后经法院调查令核实，周某病假期间多次跨省出行，前往上海、杭州等地看演唱会。公司以弄虚作假、严重违反规章制度为由解除合同。</p>
 
-      <h3>突发疾病算工伤吗？</h3>
-      <p>在工作时间和工作岗位上突发疾病，<strong>48小时内经抢救无效死亡的</strong>，视为工伤。超过48小时离世的，通常不被认定。</p>
-      <div class="risk-box">⚠️ 这个"48小时"的规定在实践中引发大量争议——家属为让亲人"在时间内离世"而不得不放弃抢救的两难困境，已成为法律层面的痛点。</div>
-
-      <h3>企业赔偿金额怎么算？</h3>
-      <p>工伤赔偿主要包括：医疗费、停工留薪期工资、一次性伤残补助金、伤残津贴、一次性工亡补助金等。具体金额依据伤残等级、当地社平工资等因素计算，差异悬殊。建议企业提前购置工伤保险，转移风险。</p>
+      <h3>两审法院一致驳回员工诉请</h3>
+      <p>一审和二审法院均认为：周某虽提交了病休证明，但跨省出行记录与"无法下床"的病情描述严重矛盾。其隐瞒出行事实的行为构成对公司《员工手册》中"病假弄虚作假"条款的违反。依据《劳动合同法》第39条，公司解除合同合法，无需支付任何赔偿。</p>
+      <div class="risk-box">⚠️ 处理"泡病假"的关键：证据先行。建议企业通过复检通知、出行记录核查、病假期间联系沟通等方式收集证据，再依据规章制度作出处理。冲动辞退没有证据支撑，一样会被判违法解除。</div>
     `
   },
   a7: {
-    title: '老板裁员一步走错，多赔几十万？N和2N傻傻分不清',
+    title: '试用期不是"随意期"！说炒就炒，法院判公司赔偿近1.4万',
     body: `
-      <p>同样是终止劳动合同，N和2N的差距可能是几十万元。搞清楚这两个概念，是每个老板的必修课。</p>
+      <p>不少企业认为试用期"想开就开"，这是一个非常危险的认识误区。法律规定，试用期辞退必须证明员工"不符合录用条件"，而这个证明责任完全在企业方。</p>
 
-      <h3>N是什么？什么情况下赔N？</h3>
-      <p><strong>N = 经济补偿金</strong>，按工作年限计算，每满1年支付1个月工资（不满6个月算0.5个月）。适用于：合法解除劳动合同的情形，包括协商解除、无过失性辞退（如裁员）、合同到期不续签等。</p>
+      <h3>案情回顾</h3>
+      <p>某公司与新入职员工签订一年期劳动合同，约定试用期两个月。试用期快满时，公司以"考核不达标"为由通知辞退。员工提起仲裁，公司无法提供具体的录用条件标准和考核记录。</p>
 
-      <h3>2N是什么？什么情况下赔2N？</h3>
-      <p><strong>2N = 赔偿金</strong>，是经济补偿金的2倍。适用于：<strong>违法解除劳动合同</strong>的情形——即企业在没有法律依据的情况下解除了合同，或程序不合法。</p>
-      <div class="risk-box">⚠️ 常见违法解除情形：没有合理理由辞退员工、试用期随意辞退、口头解除没有书面通知、规章制度程序不合规导致解除无效等。</div>
+      <h3>法院判决</h3>
+      <p>仲裁委和法院一致认为：公司主张"不符合录用条件"，但未能举证具体的录用条件是什么、考核标准是什么、员工在哪些方面未达标。缺乏这些关键证据，辞退行为构成违法解除，判赔近1.4万元。</p>
+      <div class="risk-box">⚠️ 试用期辞退的三步走：① 入职时书面确认具体录用条件；② 试用期内有明确的考核过程和记录；③ 辞退前告知具体不达标事项并给予陈述申辩机会。</div>
 
-      <h3>案例对比</h3>
-      <div class="scene">
-        <strong>案例A（合法解除，赔N）：</strong>某公司经营困难，依法裁员，提前30天书面通知并向劳动行政部门报告，支付经济补偿金共16万元。<br><br>
-        <strong>案例B（违法解除，赔2N）：</strong>某公司以"不适合岗位"为由口头辞退员工，无书面通知、无合法依据，被仲裁认定违法解除，赔偿金32万元。
-      </div>
-
-      <p>一个程序的差错，多赔16万元。这就是合规操作的价值所在。</p>
+      <h3>律师实操建议</h3>
+      <p>入职时签订《岗位录用条件确认书》，明确量化考核指标。试用期内定期考核，每次考核结果由员工签字确认。发现不符合条件时，及时收集证据并按程序处理。</p>
     `
   },
   a8: {
-    title: '试用期踩雷，老板必看！这4个坑99%的企业都中过',
+    title: '"15+5"员工不是免死金牌！天津高院：严重违纪照样合法开除',
     body: `
-      <p>真实案例：某公司试用期辞退员工，最终赔了47万！看完这4个坑，你就知道为什么了。</p>
+      <p>很多企业存在一个误区：员工在本单位工作满15年且距退休不足5年，就绝对不能解除了。天津高院的这则判决明确告诉企业：不是的，严重违纪照样可以开除。</p>
 
-      <h3>【坑1】试用期时长约定违法</h3>
-      <p>合同期限越长，试用期上限越高，但有严格限制：3年以上合同最长6个月，1-3年最长2个月，3个月-1年最长1个月。<strong>超期约定全部按正式员工标准补差，还要支付赔偿金。</strong></p>
+      <h3>案情回顾</h3>
+      <p>某企业一名55岁老员工，在公司连续工作18年，符合"15+5"保护条件。但该员工多次在工作时间饮酒、与同事发生冲突，经多次警告仍不改正。公司依据《员工手册》中"严重违纪解除"条款与其解除劳动合同。员工主张自己是法定保护人员，解除违法。</p>
 
-      <h3>【坑2】以"考核不达标"辞退没有书面标准</h3>
-      <p>试用期辞退的合法理由是"不符合录用条件"——而这个"录用条件"必须提前书面确定，并告知员工。事后临时解释的"不达标"，在仲裁庭上基本不被采信。</p>
-      <div class="risk-box">⚠️ 建议在入职时签订书面的《岗位录用条件确认书》，明确具体的量化考核指标，并由员工签字确认。</div>
+      <h3>天津高院判决</h3>
+      <p>天津高院审理认为：《劳动合同法》第42条规定的"15+5"保护情形，限制的是企业无过失性辞退和经济性裁员。但该条第（二）项同时规定，"严重违反用人单位规章制度的"不受此保护。公司解除行为合法。</p>
+      <div class="risk-box">⚠️ "15+5"员工确实受到特殊保护，但这个保护是有边界的。在严重违纪、营私舞弊、严重失职等情形下，企业仍有权依据《劳动合同法》第39条解除合同，不受第42条保护限制。</div>
 
-      <h3>【坑3】试用期不缴社保</h3>
-      <p>很多企业认为试用期是"观察期"，不需要缴纳社保。这是明显误解——自用工之日起，无论是否处于试用期，均应依法为员工缴纳社保。</p>
-
-      <h3>【坑4】试用期内随意调薪</h3>
-      <p>试用期工资不得低于同岗位最低档工资的80%，也不得低于当地最低工资标准。部分企业以"反正是试用期"为由随意克扣，构成违法。</p>
+      <h3>律师实操建议</h3>
+      <p>对"15+5"员工的管理更要规范。规章制度必须经民主程序制定并公示，违纪行为要有书面记录和证据支撑。程序合法、证据充分，才是合法解除的前提。</p>
     `
   },
   a9: {
-    title: '合同到期了就可以不续签？老板这样操作分分钟被告',
+    title: '员工不签合同要二倍工资，自己是HR呢？珠海中院最新案例说清楚了',
     body: `
-      <p>合同到期本来是一个双方可以顺利结束的节点，但很多企业在这里犯了让自己追悔莫及的错误。</p>
+      <p>未签劳动合同的二倍工资差额索赔是劳动争议中的"高频案件"。但如果拒不签合同的人恰恰是负责劳动合同管理的HR，法院该怎么判？</p>
 
-      <h3>合同到期不续签，需要支付经济补偿金吗？</h3>
-      <p>需要。只要是用人单位不愿续签（或降低条件导致员工不愿签），均须支付经济补偿金（N）。只有员工主动拒绝续签且企业维持原条件的，才无需支付。</p>
-      <div class="risk-box">⚠️ 很多企业误以为"合同到期就自然结束，什么都不用付"。这是错误的——合同到期终止仍属于需要支付经济补偿的情形之一。</div>
+      <h3>案情回顾</h3>
+      <p>珠海某公司HR李某入职后，公司多次要求其签订书面劳动合同，李某以各种理由拖延，既不签字也不说明原因。工作11个月后，李某申请劳动仲裁，以公司未签订书面劳动合同为由索赔二倍工资差额共计6万余元。</p>
 
-      <h3>什么情况下合同到期也不能终止？</h3>
-      <p>员工在以下情形中，即使合同到期，也不能终止：孕期、产期、哺乳期女员工；患职业病或工伤且尚在医疗期；在本单位连续工作满15年且距法定退休年龄不足5年等。强行终止构成违法解除。</p>
+      <h3>珠海中院判决</h3>
+      <p>珠海中院认为：李某作为公司人力资源负责人，劳动合同的签订和管理属于其本职工作范围。公司已举证多次催促李某签约，李某不予配合，公司不签合同的责任在员工方。因此<strong>不支持二倍工资差额的诉讼请求</strong>。</p>
+      <div class="risk-box">⚠️ HR岗位具有特殊的管理职责。但企业仍需注意：必须保留催促签约的书面证据（如微信记录、邮件、通知函等），否则可能仍被认定为企业责任。</div>
 
-      <h3>续签管理的3个关键动作</h3>
-      <p>① 合同到期前30天主动与员工沟通续签意向，书面通知；<br>
-      ② 如决定终止，出具书面终止通知，明确终止日期和补偿安排；<br>
-      ③ 办理完整的终止手续，出具《解除/终止劳动合同证明书》，为员工办理失业登记。</p>
+      <h3>律师实操建议</h3>
+      <p>无论员工是什么岗位，企业都应主动推进劳动合同签订。对于拒签员工，应：① 书面通知限期签订，说明法律后果；② 保留所有催告证据；③ 期满仍不签的，可依据相关规定及时终止劳动关系。</p>
     `
   }
 };
