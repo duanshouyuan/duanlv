@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>段律 · 段寿元律师 | 懂经营的劳动法律师</title>
+<meta name="description" content="段寿元，广东集能律师事务所律师。500强HRD出身，深耕劳动法领域，帮企业防患于未然。专业劳动争议、用工风险顾问。">
+<meta name="keywords" content="劳动法律师,劳动争议,用工风险,企业法律顾问,段律师,段寿元">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  :root {
+    --navy: #0d2137;
+    --navy-mid: #1a3a5c;
+    --navy-light: #2a5298;
+    --gold: #c8a96e;
+    --gold-light: #e8c98a;
+    --accent: #e84545;
+    --text: #2c2c2c;
+    --text-muted: #666;
+    --bg: #f8f7f4;
+    --white: #ffffff;
+    --border: #e8e4dc;
+    --card-bg: #ffffff;
+    --section-bg: #f0ede8;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--navy-mid); border-radius: 3px; }
+
+  /* ===== NAVIGATION ===== */
+  .navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    background: rgba(13, 33, 55, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,169,110,0.2);
+    padding: 0 40px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .nav-logo-mark {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--navy);
+    letter-spacing: -1px;
+  }
+
+  .nav-logo-text {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .nav-logo-text span {
+    color: var(--gold);
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 36px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.82);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--navy) !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px !important;
+    transition: background 0.2s, transform 0.1s !important;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold-light) !important;
+    transform: translateY(-1px);
+  }
+
+  .nav-cta::after { display: none !important; }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 64px;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(42,82,152,0.25) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(200,169,110,0.08) 0%, transparent 40%),
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.01) 40px,
+        rgba(255,255,255,0.01) 41px
+      );
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(200,169,110,0.12);
+    border: 1px solid rgba(200,169,110,0.3);
+    color: var(--gold);
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+
+  .hero-name {
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+  }
+
+  .hero-name .highlight {
+    color: var(--gold);
+    position: relative;
+  }
+
+  .hero-title {
+    font-size: 20px;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+
+  .hero-tagline {
+    font-size: clamp(22px, 3vw, 30px);
+    color: var(--white);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  .hero-tagline .em {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 2px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.9;
+    margin-bottom: 44px;
+    max-width: 520px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 44px;
+  }
+
+  .hero-stat-item {
+    text-align: center;
+  }
+
+  .hero-stat-num {
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -1px;
+  }
+
+  .hero-stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.5px;
+  }
+
+  .hero-stat-sep {
+    width: 1px;
+    background: rgba(255,255,255,0.15);
+    align-self: stretch;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(200,169,110,0.3);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.85);
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* Hero Photo Card */
+  .hero-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+  }
+
+  .hero-photo-wrap {
+    position: relative;
+    background: linear-gradient(160deg, rgba(26,58,92,0.8) 0%, rgba(13,33,55,0.9) 100%);
+    padding: 40px 32px 32px;
+    text-align: center;
+  }
+
+  .hero-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid var(--gold);
+    object-fit: cover;
+    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, #2a5298, #0d2137);
+  }
+
+  .avatar-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid var(--gold);
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, var(--navy-mid), var(--navy-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    color: var(--gold);
+    font-weight: 900;
+  }
+
+  .hero-card-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .hero-card-title {
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(200,169,110,0.12);
+    border: 1px solid rgba(200,169,110,0.25);
+    color: var(--gold-light);
+    letter-spacing: 0.3px;
+  }
+
+  .hero-contact-box {
+    padding: 24px 32px;
+    border-top: 1px solid rgba(200,169,110,0.15);
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .contact-item:last-child { margin-bottom: 0; }
+
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(200,169,110,0.12);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* ===== SECTION BASE ===== */
+  section { padding: 96px 0; }
+
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 1px;
+  }
+
+  .section-title {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 600px;
+  }
+
+  .section-header {
+    margin-bottom: 56px;
+  }
+
+  /* ===== ABOUT SECTION ===== */
+  .about { background: var(--white); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .about-story p {
+    font-size: 16px;
+    color: var(--text);
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  .about-story .story-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.8;
+    border-left: 4px solid var(--gold);
+    padding-left: 20px;
+    margin-bottom: 28px;
+  }
+
+  .about-story .em {
+    color: var(--navy-light);
+    font-weight: 700;
+  }
+
+  .philosophy-box {
+    background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+    color: var(--white);
+    border-radius: 12px;
+    padding: 36px;
+    margin-top: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .philosophy-box::before {
+    content: '"';
+    position: absolute;
+    right: 24px;
+    top: -10px;
+    font-size: 120px;
+    color: rgba(200,169,110,0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .philosophy-box p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+
+  .philosophy-box cite {
+    font-size: 13px;
+    color: var(--gold);
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 36px;
+    padding-left: 0;
+  }
+
+  .timeline-dot {
+    width: 32px;
+    height: 32px;
+    background: var(--navy);
+    border: 3px solid var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-content {
+    flex: 1;
+    padding-top: 4px;
+  }
+
+  .timeline-period {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .timeline-role {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .timeline-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* ===== EXPERTISE ===== */
+  .expertise { background: var(--section-bg); }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .expertise-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 36px 28px;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .expertise-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--navy-mid), var(--gold));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .expertise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(13,33,55,0.1);
+    border-color: transparent;
+  }
+
+  .expertise-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .expertise-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, rgba(26,58,92,0.08), rgba(200,169,110,0.08));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(200,169,110,0.15);
+  }
+
+  .expertise-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  .expertise-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .expertise-tag {
+    font-size: 12px;
+    padding: 3px 10px;
+    background: rgba(26,58,92,0.06);
+    border: 1px solid rgba(26,58,92,0.12);
+    border-radius: 20px;
+    color: var(--navy-mid);
+  }
+
+  /* ===== DISTINCTION ===== */
+  .distinction { background: var(--navy); }
+
+  .distinction .section-title { color: var(--white); }
+  .distinction .section-sub { color: rgba(255,255,255,0.6); }
+  .distinction .section-label { color: var(--gold); }
+  .distinction .section-label::before { background: var(--gold); }
+
+  .distinction-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .distinction-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.15);
+    border-radius: 12px;
+    padding: 32px 28px;
+    transition: all 0.3s;
+  }
+
+  .distinction-card:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(200,169,110,0.35);
+    transform: translateY(-3px);
+  }
+
+  .distinction-num {
+    font-size: 56px;
+    font-weight: 900;
+    color: rgba(200,169,110,0.15);
+    line-height: 1;
+    margin-bottom: -8px;
+    font-family: Georgia, serif;
+  }
+
+  .distinction-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .distinction-body {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.9;
+  }
+
+  .distinction-body strong {
+    color: var(--white);
+  }
+
+  /* ===== ARTICLES ===== */
+  .articles { background: var(--bg); }
+
+  .articles-filter {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1.5px solid var(--border);
+    background: var(--white);
+    color: var(--text-muted);
+    font-family: inherit;
+  }
+
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+  }
+
+  .filter-btn.active {
+    font-weight: 600;
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .article-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(13,33,55,0.08);
+    border-color: transparent;
+  }
+
+  .article-card-head {
+    padding: 28px 28px 0;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .article-cat {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+
+  .cat-contract { background: rgba(26,58,92,0.08); color: var(--navy-mid); }
+  .cat-dismiss { background: rgba(232,69,69,0.08); color: #c0392b; }
+  .cat-wage { background: rgba(39,174,96,0.08); color: #1e8449; }
+  .cat-injure { background: rgba(230,126,34,0.08); color: #ba6012; }
+  .cat-compete { background: rgba(142,68,173,0.08); color: #7d3c98; }
+  .cat-trial { background: rgba(26,82,152,0.1); color: #1a4f8a; }
+  .cat-overtime { background: rgba(22,160,133,0.08); color: #117a65; }
+
+  .article-date {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .article-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .article-excerpt {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    padding: 0 28px;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .article-card-foot {
+    padding: 16px 28px 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .article-key {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .article-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 0.2s;
+  }
+
+  .article-link:hover {
+    gap: 8px;
+    color: var(--gold);
+  }
+
+  .articles-more {
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  /* ===== SERVICES ===== */
+  .services { background: var(--white); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .service-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+    transition: all 0.3s;
+    display: flex;
+    gap: 24px;
+  }
+
+  .service-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 32px rgba(200,169,110,0.1);
+    transform: translateY(-2px);
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .service-info h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .service-info p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .service-list li {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.6;
+  }
+
+  .service-list li::before {
+    content: '✓';
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #1a2a5e 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(200,169,110,0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 20%, rgba(42,82,152,0.2) 0%, transparent 50%);
+  }
+
+  .contact .section-title { color: var(--white); }
+  .contact .section-sub { color: rgba(255,255,255,0.6); }
+  .contact .section-label { color: var(--gold); }
+  .contact .section-label::before { background: var(--gold); }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 440px;
+    gap: 80px;
+    align-items: start;
+    position: relative;
+    z-index: 2;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 8px;
+  }
+
+  .contact-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.15);
+    border-radius: 12px;
+    padding: 24px 28px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .contact-card-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(200,169,110,0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .contact-card-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .contact-card-value {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .contact-card-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 2px;
+  }
+
+  .contact-form-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.15);
+    border-radius: 16px;
+    padding: 40px 36px;
+    backdrop-filter: blur(8px);
+  }
+
+  .contact-form-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .contact-form-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 28px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  .form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .form-input::placeholder, .form-textarea::placeholder {
+    color: rgba(255,255,255,0.3);
+  }
+
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: var(--gold);
+  }
+
+  .form-select {
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  .form-select option {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .form-textarea {
+    height: 100px;
+    resize: vertical;
+    line-height: 1.6;
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: 14px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    margin-top: 4px;
+  }
+
+  .form-submit:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(200,169,110,0.3);
+  }
+
+  /* Free consult note */
+  .free-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 12px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--navy);
+    border-top: 1px solid rgba(200,169,110,0.15);
+    padding: 40px 60px;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-mark {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--navy);
+  }
+
+  .footer-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .footer-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 2px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 28px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--gold); }
+
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* ===== SCROLL TO TOP ===== */
+  .scroll-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 44px;
+    height: 44px;
+    background: var(--navy);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--gold);
+    transition: all 0.2s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .scroll-top.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .scroll-top:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-3px);
+  }
+
+  /* ===== UTILITIES ===== */
+  .text-gold { color: var(--gold); }
+  .divider { height: 1px; background: var(--border); margin: 48px 0; }
+
+  /* ===== ARTICLE MODAL ===== */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(4px);
+  }
+
+  .modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal {
+    background: var(--white);
+    border-radius: 16px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px) scale(0.97);
+    transition: transform 0.3s;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.3);
+  }
+
+  .modal-overlay.open .modal {
+    transform: translateY(0) scale(1);
+  }
+
+  .modal-head {
+    padding: 28px 32px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.4;
+  }
+
+  .modal-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+  }
+
+  .modal-close:hover {
+    background: var(--section-bg);
+    color: var(--navy);
+  }
+
+  .modal-body {
+    padding: 28px 32px;
+    overflow-y: auto;
+    flex: 1;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text);
+  }
+
+  .modal-body h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 24px 0 10px;
+    border-left: 4px solid var(--gold);
+    padding-left: 12px;
+  }
+
+  .modal-body p { margin-bottom: 16px; }
+
+  .modal-body .risk-box {
+    background: #fff8f0;
+    border-left: 4px solid #e67e22;
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #5a4000;
+    line-height: 1.8;
+  }
+
+  .modal-body .scene {
+    background: #f7f9fc;
+    border-left: 4px solid var(--navy-light);
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.9;
+  }
+
+  .modal-foot {
+    padding: 20px 32px;
+    border-top: 1px solid var(--border);
+    background: var(--section-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .modal-foot-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--navy);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .modal-foot-cta:hover {
+    background: var(--navy-light);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .section-inner { padding: 0 40px; }
+    .hero-inner { padding: 60px 40px; gap: 48px; grid-template-columns: 1fr 360px; }
+    .about-grid { gap: 48px; }
+    .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .navbar { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero-inner { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
+    .hero-card { max-width: 400px; }
+    .section-inner { padding: 0 24px; }
+    section { padding: 64px 0; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .expertise-grid { grid-template-columns: 1fr; }
+    .distinction-grid { grid-template-columns: 1fr; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    .hero-stats { gap: 24px; }
+    .footer { padding: 32px 24px; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">段</div>
+    <span class="nav-logo-text">段律 <span>· 劳动法专页</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">关于我</a></li>
+    <li><a href="#expertise">专业领域</a></li>
+    <li><a href="#distinction">独特优势</a></li>
+    <li><a href="#articles">文章专栏</a></li>
+    <li><a href="#services">服务内容</a></li>
+    <li><a href="#contact" class="nav-cta">免费咨询</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">广东集能律师事务所 · 深圳</div>
+      <div class="hero-name"><span class="highlight">段</span>寿元律师</div>
+      <div class="hero-title">劳动法 · 企业用工风险顾问</div>
+      <div class="hero-tagline">
+        不只是帮你<span class="em">赢官司</span><br>
+        更从经营角度帮你<span class="em">别惹官司</span>
+      </div>
+      <p class="hero-desc">
+        500强HRD出身，深知企业管理实操困境；<br>
+        转型劳动法律师，擅用法律思维解决人事难题。<br>
+        帮中小企业从"出了事再找律师"变成"提前把雷排掉"。
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">500强</span>
+          <span class="hero-stat-label">HRD从业经历</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">70%+</span>
+          <span class="hero-stat-label">争议发生在离职后</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">8大</span>
+          <span class="hero-stat-label">用工风险核心模块</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">📞 预约免费咨询</a>
+        <a href="#articles" class="btn-secondary">📚 阅读专栏文章</a>
+      </div>
+    </div>
+
+    <!-- Hero Card -->
+    <div class="hero-card">
+      <div class="hero-photo-wrap">
+        <div class="avatar-placeholder">段</div>
+        <div class="hero-card-name">段寿元律师</div>
+        <div class="hero-card-title">执业律师 · 企业法律顾问</div>
+        <div class="hero-badges">
+          <span class="badge">劳动法专攻</span>
+          <span class="badge">500强HRD背景</span>
+          <span class="badge">创业高管经历</span>
+          <span class="badge">深圳执业</span>
+        </div>
+      </div>
+      <div class="hero-contact-box">
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.45);margin-bottom:2px;">手机/微信</div>
+            <div style="font-size:16px;font-weight:700;color:#fff;">18098958656</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🏛️</div>
+          <div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.45);margin-bottom:2px;">执业机构</div>
+            <div style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);">广东集能律师事务所</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.45);margin-bottom:2px;">公众号</div>
+            <div style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);">段律</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-story">
+        <div class="section-label">关于我</div>
+        <h2 class="section-title">那段不一样的经历<br>造就了不一样的律师</h2>
+
+        <p class="story-lead">
+          在做律师之前，我在世界500强担任HRD，也在创业公司做过高管。两种角色都有，所以我特别理解老板的处境。
+        </p>
+
+        <p>
+          我见过太多老板在收到仲裁通知书那一刻，才意识到：<span class="em">原来公司日常管理里，早就埋了几颗雷</span>。试用期随意延长、加班费用绩效冲抵、口头辞退不出书面……这些"常规操作"，在仲裁庭上每一个都是败诉的筹码。
+        </p>
+
+        <p>
+          这让我意识到：仅仅懂法律是不够的。真正帮到老板的律师，需要先懂业务，懂经营，才能把法律建议落地进日常管理——而不是等到出事了再去救火。
+        </p>
+
+        <p>
+          这就是我的定位：<span class="em">一个懂经营的劳动法律师</span>。
+        </p>
+
+        <div class="philosophy-box">
+          <p>合法 ≠ 合规，合规 ≠ 低风险。用工管理是一门系统工程，需要从招聘、入职、在职、离职各个节点统一设计。</p>
+          <cite>— 段寿元律师</cite>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div>
+        <div class="section-label">职业历程</div>
+        <h3 style="font-size:22px;font-weight:800;color:var(--navy);margin-bottom:36px;line-height:1.4;">从HR高管到<br>劳动法律师</h3>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">🏢</div>
+            <div class="timeline-content">
+              <div class="timeline-period">世界500强企业</div>
+              <div class="timeline-role">HRD · 人力资源总监</div>
+              <div class="timeline-desc">主导招聘体系建立、薪酬架构设计、员工关系管理，亲历数百起劳动争议的企业侧视角</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">🚀</div>
+            <div class="timeline-content">
+              <div class="timeline-period">创业企业</div>
+              <div class="timeline-role">高管 · 联合创始人</div>
+              <div class="timeline-desc">参与中小企业从0到1的团队搭建与用工制度设计，深切体会创业公司的人事困局与成本约束</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">⚖️</div>
+            <div class="timeline-content">
+              <div class="timeline-period">现在</div>
+              <div class="timeline-role">执业律师 · 广东集能律师事务所</div>
+              <div class="timeline-desc">专注劳动法领域，为企业提供用工风险诊断、制度建设、仲裁诉讼全流程法律服务</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="expertise" id="expertise">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">专业领域</div>
+      <h2 class="section-title">8大用工风险模块<br>全周期覆盖</h2>
+      <p class="section-sub">从入职到离职，从薪酬到工伤，将企业用工的每个关键节点都纳入风险管控体系</p>
+    </div>
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <div class="expertise-icon">📋</div>
+        <div class="expertise-name">试用期管理</div>
+        <div class="expertise-desc">试用期约定是否合法？辞退理由是否成立？99%的企业都在无意中埋下了风险。</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">试用期限制</span>
+          <span class="expertise-tag">考核标准</span>
+          <span class="expertise-tag">违法辞退赔偿</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">📄</div>
+        <div class="expertise-name">合同管理</div>
+        <div class="expertise-desc">合同到期不续签就安全了？错。书面合同缺失、固定期限到期等问题每年产生大量纠纷。</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">双倍工资</span>
+          <span class="expertise-tag">无固定期限</span>
+          <span class="expertise-tag">续签管理</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">⏰</div>
+        <div class="expertise-name">工时管理</div>
+        <div class="expertise-desc">员工下班后微信回复消息算不算加班？标准工时、综合工时、不定时工时制的差异，一旦混淆代价极大。</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">加班费计算</span>
+          <span class="expertise-tag">工时制度</span>
+          <span class="expertise-tag">隐形加班</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">🚪</div>
+        <div class="expertise-name">离职管理</div>
+        <div class="expertise-desc">70%以上的劳动争议发生在离职后。从离职流程到手续交接，每个节点都是潜在的法律风险。</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">辞退程序</span>
+          <span class="expertise-tag">经济补偿金</span>
+          <span class="expertise-tag">N与2N</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">🏥</div>
+        <div class="expertise-name">工伤管理</div>
+        <div class="expertise-desc">上下班途中出事故算不算工伤？突发疾病怎么认定？企业应该如何建立工伤应急机制？</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">工伤认定</span>
+          <span class="expertise-tag">上下班途中</span>
+          <span class="expertise-tag">赔偿标准</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">🔄</div>
+        <div class="expertise-name">调岗管理</div>
+        <div class="expertise-desc">调岗调薪合不合法？单方调整职位或降薪是否构成违法？如何在合规框架内保障企业灵活用工。</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">单方调岗</span>
+          <span class="expertise-tag">降薪合规</span>
+          <span class="expertise-tag">岗位协议</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">⚡</div>
+        <div class="expertise-name">违纪管理</div>
+        <div class="expertise-desc">规章制度未经民主程序等于废纸。企业如何制定、公示、执行有效的管理制度，是劳动争议的核心战场。</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">规章制度效力</span>
+          <span class="expertise-tag">民主程序</span>
+          <span class="expertise-tag">违纪解除</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="expertise-icon">🔒</div>
+        <div class="expertise-name">竞业限制</div>
+        <div class="expertise-desc">签了竞业协议反被员工告倒？竞业限制条款如何写才有效？补偿金如何约定才合法？</div>
+        <div class="expertise-tags">
+          <span class="expertise-tag">条款有效性</span>
+          <span class="expertise-tag">补偿金</span>
+          <span class="expertise-tag">违约责任</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISTINCTION -->
+<section class="distinction" id="distinction">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">独特优势</div>
+      <h2 class="section-title">为什么选择段律师</h2>
+      <p class="section-sub">不是所有劳动法律师都有过HRD和高管的经历——而这些经历，决定了服务的深度</p>
+    </div>
+
+    <div class="distinction-grid">
+      <div class="distinction-card">
+        <div class="distinction-num">01</div>
+        <div class="distinction-title">懂老板的语言</div>
+        <div class="distinction-body">
+          在世界500强做过HRD，在创业公司做过高管，我见过太多律师给出的建议"法律上没错，但落不了地"。我的建议从来不是纸面合规，而是<strong>真正能嵌进日常管理的操作方案</strong>。
+        </div>
+      </div>
+
+      <div class="distinction-card">
+        <div class="distinction-num">02</div>
+        <div class="distinction-title">防患优先于救火</div>
+        <div class="distinction-body">
+          劳动争议一旦发生，企业的损失不只是赔偿金——还有时间、精力、声誉。我的核心工作是<strong>在争议发生前把漏洞堵上</strong>，而不是发生后才上场。
+        </div>
+      </div>
+
+      <div class="distinction-card">
+        <div class="distinction-num">03</div>
+        <div class="distinction-title">真实案例 × 系统思维</div>
+        <div class="distinction-body">
+          我处理的每一个案件都提炼为可复用的系统化经验。无论是试用期踩雷、竞业限制失效还是工伤争议，<strong>每个坑都被我们归纳成可预防的检查清单</strong>。
+        </div>
+      </div>
+
+      <div class="distinction-card">
+        <div class="distinction-num">04</div>
+        <div class="distinction-title">中小企业最懂的那个律师</div>
+        <div class="distinction-body">
+          大企业有法务团队，中小企业最需要的是"身边的法律军师"——随时可问、懂业务背景、说人话、给得出方案。<strong>这正是我对企业顾问服务的定义</strong>。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="articles" id="articles">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">文章专栏</div>
+      <h2 class="section-title">真实案例 × 法律解读<br>每篇都是一颗雷的拆解说明书</h2>
+      <p class="section-sub">来自"段律"公众号的原创内容，以老板视角讲清楚每一个用工风险点</p>
+    </div>
+
+    <div class="articles-filter">
+      <button class="filter-btn active" onclick="filterArticles('all', this)">全部</button>
+      <button class="filter-btn" onclick="filterArticles('dismiss', this)">离职管理</button>
+      <button class="filter-btn" onclick="filterArticles('contract', this)">合同管理</button>
+      <button class="filter-btn" onclick="filterArticles('wage', this)">薪酬工时</button>
+      <button class="filter-btn" onclick="filterArticles('injure', this)">工伤管理</button>
+      <button class="filter-btn" onclick="filterArticles('compete', this)">竞业限制</button>
+      <button class="filter-btn" onclick="filterArticles('trial', this)">试用期</button>
+    </div>
+
+    <div class="articles-grid" id="articlesGrid">
+
+      <!-- Article 1 -->
+      <div class="article-card" data-cat="dismiss">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-dismiss">离职管理</span>
+            <span class="article-date">2026-03-21</span>
+          </div>
+          <div class="article-title">员工离职后反手一刀？老板最怕的5大用工雷区</div>
+        </div>
+        <div class="article-excerpt">
+          超过70%的劳动争议发生在员工离职之后。劳动合同不续签以为"自然终止"、加班费用绩效冲抵、口头辞退不出书面……这5个常规操作，你的公司中了几条？
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 5大雷区 · 实操建议</span>
+          <a href="#" class="article-link" onclick="openArticle('a1'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="article-card" data-cat="dismiss">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-dismiss">离职管理</span>
+            <span class="article-date">2026-03-22</span>
+          </div>
+          <div class="article-title">员工说"我要走"就没事了？老板最容易中招的3大离职陷阱</div>
+        </div>
+        <div class="article-excerpt">
+          员工口头提辞职，企业以为稳了——结果对方反悔、主张被迫离职，索赔赔偿金。离职流程看似简单，实则每一步都是雷区。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 离职陷阱 · 证据留存</span>
+          <a href="#" class="article-link" onclick="openArticle('a2'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="article-card" data-cat="compete">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-compete">竞业限制</span>
+            <span class="article-date">2026-03-23</span>
+          </div>
+          <div class="article-title">签了竞业协议，反被员工告倒？中小企业最常踩的3个坑</div>
+        </div>
+        <div class="article-excerpt">
+          企业花大力气让员工签了竞业协议，以为高枕无忧——结果因为补偿金没约定清楚、条款无效、范围过宽，反而成了被告。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 条款效力 · 补偿金陷阱</span>
+          <a href="#" class="article-link" onclick="openArticle('a3'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="article-card" data-cat="wage">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-wage">薪酬管理</span>
+            <span class="article-date">2026-03-24</span>
+          </div>
+          <div class="article-title">员工下班后还在微信群回消息，出了事谁来担责？</div>
+        </div>
+        <div class="article-excerpt">
+          隐形加班是当下劳动争议新热点。员工在家用手机处理工作，算不算加班？企业如何举证？法院怎么判？一文说清楚。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 隐形加班 · 新司法实践</span>
+          <a href="#" class="article-link" onclick="openArticle('a4'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 5 -->
+      <div class="article-card" data-cat="wage">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-wage">薪酬管理</span>
+            <span class="article-date">2026-03-25</span>
+          </div>
+          <div class="article-title">老板注意！这样调薪、扣薪，员工可以直接告你</div>
+        </div>
+        <div class="article-excerpt">
+          调薪看似是企业内部管理行为，但单方降薪、绩效扣减操作不当，都可能构成违法，让员工有权主张被迫解除、索赔赔偿金。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 调薪合规 · 违法边界</span>
+          <a href="#" class="article-link" onclick="openArticle('a5'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 6 -->
+      <div class="article-card" data-cat="injure">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-injure">工伤管理</span>
+            <span class="article-date">2026-03-26</span>
+          </div>
+          <div class="article-title">员工上下班途中出了事故，老板要赔多少钱？</div>
+        </div>
+        <div class="article-excerpt">
+          工伤认定标准：上下班途中、突发疾病，到底算不算工伤？不同情形下企业的赔偿责任差异悬殊，一文彻底理清。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 工伤认定 · 赔偿标准</span>
+          <a href="#" class="article-link" onclick="openArticle('a6'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 7 -->
+      <div class="article-card" data-cat="dismiss">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-dismiss">离职管理</span>
+            <span class="article-date">2026-03-27</span>
+          </div>
+          <div class="article-title">老板裁员一步走错，多赔几十万？N和2N傻傻分不清</div>
+        </div>
+        <div class="article-excerpt">
+          同样是裁员，N和2N的差距可能是几十万。经济补偿金与赔偿金怎么区分？什么情况下赔N，什么情况下赔2N？
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 裁员赔偿 · N与2N</span>
+          <a href="#" class="article-link" onclick="openArticle('a7'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 8 -->
+      <div class="article-card" data-cat="trial">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-trial">试用期</span>
+            <span class="article-date">2026-03-28</span>
+          </div>
+          <div class="article-title">试用期踩雷，老板必看！这4个坑99%的企业都中过</div>
+        </div>
+        <div class="article-excerpt">
+          试用期辞退员工赔了47万！真实案例揭示：违法约定试用期、以考核不达标为由辞退、试用期内不缴社保……每一个坑都是真实的。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 试用期风险 · 实操要点</span>
+          <a href="#" class="article-link" onclick="openArticle('a8'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+      <!-- Article 9 -->
+      <div class="article-card" data-cat="contract">
+        <div class="article-card-head">
+          <div class="article-meta">
+            <span class="article-cat cat-contract">合同管理</span>
+            <span class="article-date">2026-03-29</span>
+          </div>
+          <div class="article-title">合同到期了就可以不续签？老板这样操作分分钟被告</div>
+        </div>
+        <div class="article-excerpt">
+          合同到期不续签并不等于"什么都不用做"。终止劳动合同的条件、补偿金计算方式、通知期限……一旦程序出错，结果可能是双倍赔偿。
+        </div>
+        <div class="article-card-foot">
+          <span class="article-key">📌 合同到期 · 终止赔偿</span>
+          <a href="#" class="article-link" onclick="openArticle('a9'); return false;">阅读全文 →</a>
+        </div>
+      </div>
+
+    </div><!-- /.articles-grid -->
+
+    <div class="articles-more">
+      <a href="https://mp.weixin.qq.com/s" target="_blank" class="btn-primary" style="display:inline-flex;">
+        📱 关注"段律"公众号，查看全部文章
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">服务内容</div>
+      <h2 class="section-title">从预防到应对<br>全周期企业用工法律服务</h2>
+      <p class="section-sub">无论你是想提前预防、还是已经陷入争议，都有适合的服务方案</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-info">
+          <h3>用工风险诊断</h3>
+          <p>对企业现有劳动合同、薪酬体系、规章制度、工时安排等进行全面体检，识别高风险点并出具整改建议报告。</p>
+          <ul class="service-list">
+            <li>合同模板及条款合规审查</li>
+            <li>薪酬与工时结构风险识别</li>
+            <li>规章制度民主程序合规核查</li>
+            <li>出具可操作的整改清单</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <div class="service-info">
+          <h3>制度建设与合同起草</h3>
+          <p>从零搭建或修订企业规章制度体系，量身定制劳动合同、竞业限制协议、保密协议等核心文件。</p>
+          <ul class="service-list">
+            <li>员工手册与规章制度设计</li>
+            <li>劳动合同定制（标准/特殊岗位）</li>
+            <li>竞业限制与保密协议起草</li>
+            <li>离职协议及证明文件模板</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚔️</div>
+        <div class="service-info">
+          <h3>劳动争议代理</h3>
+          <p>代理劳动仲裁和诉讼，为企业在劳动争议中提供专业的法律支持，争取最优结果。</p>
+          <ul class="service-list">
+            <li>劳动仲裁全程代理</li>
+            <li>一审、二审诉讼代理</li>
+            <li>证据收集与策略设计</li>
+            <li>和解谈判与调解协助</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <div class="service-info">
+          <h3>年度法律顾问</h3>
+          <p>为中小微企业提供常年陪伴式法律顾问服务，做老板身边随时可问的"法律军师"。</p>
+          <ul class="service-list">
+            <li>日常用工问题随时咨询</li>
+            <li>重大人事决策合规把关</li>
+            <li>定期用工风险排查报告</li>
+            <li>员工关系纠纷预处理指导</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">联系我</div>
+      <h2 class="section-title">有用工困惑？<br>先聊一聊</h2>
+      <p class="section-sub">首次咨询免费。说清楚你的情况，我来帮你判断风险等级和处理思路</p>
+    </div>
+
+    <div class="contact-layout">
+      <div>
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-icon">📱</div>
+            <div>
+              <div class="contact-card-label">手机 / 微信</div>
+              <div class="contact-card-value">18098958656</div>
+              <div class="contact-card-sub">段寿元律师直线</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">🏛️</div>
+            <div>
+              <div class="contact-card-label">执业机构</div>
+              <div class="contact-card-value">广东集能律师事务所</div>
+              <div class="contact-card-sub">深圳 · 广东</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">💬</div>
+            <div>
+              <div class="contact-card-label">微信公众号</div>
+              <div class="contact-card-value">段律</div>
+              <div class="contact-card-sub">每日更新劳动法实务内容</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">🕒</div>
+            <div>
+              <div class="contact-card-label">咨询时间</div>
+              <div class="contact-card-value">工作日 9:00–18:00</div>
+              <div class="contact-card-sub">紧急事项可发微信留言</div>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:28px;font-size:14px;color:rgba(255,255,255,0.4);line-height:1.8;">
+          免责声明：本网站内容仅供参考，不构成具体法律意见。如涉及具体法律问题，请直接联系段律师获取专业咨询。
+        </p>
+      </div>
+
+      <div class="contact-form-box">
+        <div class="contact-form-title">预约免费咨询</div>
+        <div class="contact-form-sub">填写后，我会在24小时内回复</div>
+
+        <div class="form-group">
+          <label>您的称呼</label>
+          <input type="text" class="form-input" placeholder="请输入姓名或公司名">
+        </div>
+        <div class="form-group">
+          <label>联系电话</label>
+          <input type="tel" class="form-input" placeholder="方便回拨的手机号">
+        </div>
+        <div class="form-group">
+          <label>咨询方向</label>
+          <select class="form-select">
+            <option value="">请选择咨询类型</option>
+            <option>试用期管理</option>
+            <option>合同管理</option>
+            <option>加班工时问题</option>
+            <option>离职纠纷</option>
+            <option>工伤认定</option>
+            <option>竞业限制</option>
+            <option>调岗调薪</option>
+            <option>劳动仲裁应诉</option>
+            <option>年度法律顾问</option>
+            <option>其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>简要描述情况（选填）</label>
+          <textarea class="form-textarea" placeholder="例如：员工提出离职但反悔了，现在要求我赔赔偿金……"></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit()">提交预约 →</button>
+        <div class="free-note">🔒 首次咨询免费 · 信息保密 · 不骚扰</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-mark">段</div>
+      <div>
+        <div class="footer-name">段寿元律师 · 段律</div>
+        <div class="footer-sub">广东集能律师事务所 · 深圳</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#about">关于我</a>
+      <a href="#expertise">专业领域</a>
+      <a href="#articles">文章专栏</a>
+      <a href="#services">服务内容</a>
+      <a href="#contact">联系我</a>
+    </div>
+    <div class="footer-copy">© 2026 段寿元律师 · 仅供法律咨询参考</div>
+  </div>
+</footer>
+
+<!-- Scroll Top -->
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ===== ARTICLE MODALS ===== -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeArticle(event)">
+  <div class="modal" id="articleModal">
+    <div class="modal-head">
+      <div class="modal-title" id="modalTitle"></div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <span>来源：段律公众号原创 · 段寿元律师</span>
+      <a href="#contact" class="modal-foot-cta" onclick="closeModalDirect()">📞 咨询律师 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+// Scroll top button
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTopBtn');
+  btn.classList.toggle('visible', window.scrollY > 400);
+});
+
+// Article filter
+function filterArticles(cat, btn) {
+  // Update buttons
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // Filter cards
+  document.querySelectorAll('.article-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// Article content data
+const articles = {
+  a1: {
+    title: '员工离职后反手一刀？老板最怕的5大用工雷区',
+    body: `
+      <p><strong>真实案例 × 法律解读 × 高管视角 | 一文读懂企业用工风险</strong></p>
+
+      <p>上周，一位老板朋友在电话里跟我诉苦：</p>
+      <div class="scene">
+        "员工干了三年，提出辞职，走得很平静。结果两个月后，劳动仲裁的通知书就来了，说我克扣加班费，要求赔偿4.8万，还要双倍工资！段律，我这叫什么事？"
+      </div>
+      <p>这不是个例。在我处理的企业用工案件中，<strong>超过70%的争议发生在员工离职之后</strong>。</p>
+
+      <h3>【雷区1】劳动合同不续签，以为"自然终止"就没事了</h3>
+      <p>某制造型公司，员工合同到期后继续上班，公司认为"默认续签"，未签新合同。员工工作满11个月后提出仲裁：未签书面合同，索要双倍工资差额约3.2万元。</p>
+      <div class="risk-box">⚠️ 法律风险：《劳动合同法》第82条规定，用人单位超过1个月未签书面劳动合同，须支付双倍工资；超过1年视为签订无固定期限合同。</div>
+
+      <h3>【雷区2】加班费用"绩效冲抵"，HR觉得省事</h3>
+      <p>某互联网公司对销售岗位实行"高提成+不计加班"制度。员工离职后以未支付加班费提起仲裁，主张两年加班费差额共计5.6万元，最终公司败诉，赔付4.1万元。</p>
+      <div class="risk-box">⚠️ 只有经劳动行政部门批准实行不定时工作制的岗位，才不适用加班费规定。"绩效冲抵"缺乏法律依据。</div>
+
+      <h3>【雷区3】试用期反复延长，自以为"低风险"</h3>
+      <p>某公司与员工签订三年合同，约定试用期六个月。试用期快满时，以"考核未达标"为由要求再延三个月。</p>
+      <div class="risk-box">⚠️ 试用期只能约定一次。违法约定试用期的，须向员工支付赔偿金。</div>
+
+      <h3>【雷区4】口头辞退员工，不出书面文件</h3>
+      <p>某餐饮公司经营不善，老板口头通知10名员工"不用来了"。因无法举证"合法解除理由"，被判赔偿共计约18万元。</p>
+      <div class="risk-box">⚠️ 解除劳动合同须有合法依据并出具书面通知。违法解除需支付赔偿金（N×2），举证责任在用人单位。</div>
+
+      <h3>【雷区5】规章制度未经民主程序，"内部规定"当摆设</h3>
+      <p>某公司以员工违反"迟到三次即辞退"制度为由解除合同。仲裁委认定该制度未经民主程序、也未向员工公示，解除行为违法，公司赔付员工2.4万元。</p>
+      <div class="risk-box">⚠️ 规章制度须经职工代表大会或全体职工讨论，并向员工公示或告知，方具备法律效力。</div>
+
+      <h3>律师实操建议</h3>
+      <p>从招聘、入职、在职到离职，每个节点都需要建立规范的管控动作。用工管理是一门系统工程——合法 ≠ 合规，合规 ≠ 低风险。</p>
+    `
+  },
+  a2: {
+    title: '员工说"我要走"就没事了？老板最容易中招的3大离职陷阱',
+    body: `
+      <p>员工主动提辞职，老板以为"终于可以松口气"。但很多时候，正是这种放松，埋下了后续被仲裁的祸根。</p>
+
+      <h3>【陷阱1】口头辞职，没有书面记录</h3>
+      <p>员工口头说"我不干了"，过几天反悔，主张从未提过辞职——而公司没有任何书面证据，形势立刻逆转。</p>
+      <div class="risk-box">⚠️ 员工口头辞职一旦无法举证，企业可能被认定为单方解除，须支付赔偿金（2N）。建议要求员工提交书面辞职信，并保留好交接记录。</div>
+
+      <h3>【陷阱2】被迫离职，算企业违法解除</h3>
+      <p>企业对员工拖欠工资、随意调岗或恶意克扣奖金，员工以"被迫"为由提出辞职，仍可主张经济补偿金甚至赔偿金。</p>
+      <div class="risk-box">⚠️ 《劳动合同法》第38条规定：用人单位存在克扣工资、强制加班等行为，员工有权解除合同并获得经济补偿。</div>
+
+      <h3>【陷阱3】离职交接不规范，离职后索赔无据</h3>
+      <p>员工提出辞职后，企业没有完整的工作交接记录，事后发现资料缺失或业务受损，却无法向离职员工追责。</p>
+      <div class="risk-box">⚠️ 建议设计完整的离职交接清单，双方签字确认，明确交接内容和完成时间，为后续维权留好依据。</div>
+
+      <p>离职管理是企业用工风险的"最后一公里"，也是最容易被忽视的。做好这3点，可以避免大部分离职纠纷。</p>
+    `
+  },
+  a3: {
+    title: '签了竞业协议，反被员工告倒？中小企业最常踩的3个坑',
+    body: `
+      <p>很多企业签竞业协议，是为了保护商业秘密、防止员工跳槽带走客户。但如果条款设计不当，这把"护身符"可能反手变成"烫手山芋"。</p>
+
+      <h3>【坑1】忘记约定补偿金，协议直接失效</h3>
+      <p>某公司与高管签订竞业限制协议，但未约定竞业补偿金数额，也未实际支付。员工离职后认为协议无效，直接入职竞争对手。公司提出仲裁，仲裁委认定无补偿约定的竞业协议对员工不具有约束力。</p>
+      <div class="risk-box">⚠️ 《劳动合同法》规定，竞业限制协议必须约定经济补偿，否则员工有权拒绝履行。补偿金标准通常不得低于离职前12个月平均工资的1/3。</div>
+
+      <h3>【坑2】竞业范围过宽，条款被认定无效</h3>
+      <p>某互联网公司竞业协议约定员工"离职后2年内不得从事任何互联网相关工作"——因范围过于宽泛，严重限制员工就业权，被法院认定为无效条款。</p>
+      <div class="risk-box">⚠️ 竞业限制范围应与员工岗位相关、与公司实际竞争对手对应。范围过宽将导致条款无效，失去保护意义。</div>
+
+      <h3>【坑3】忘了约定违约金，员工违约无成本</h3>
+      <p>企业约定了竞业限制和补偿金，却未约定员工违反协议的违约金数额，导致即使员工违约，公司也难以主张赔偿——因为损失举证极为困难。</p>
+      <div class="risk-box">⚠️ 竞业协议中应明确约定违约金数额（通常为补偿金的3-5倍），作为违约成本约束，同时明确解除协议的条件。</div>
+    `
+  },
+  a4: {
+    title: '员工下班后还在微信群回消息，出了事谁来担责？',
+    body: `
+      <p>"隐形加班"是近年劳动争议的新热点。员工下班后继续用手机处理工作事务，是否构成加班？法律层面已有新的司法实践。</p>
+
+      <h3>最新司法实践：法院如何认定隐形加班</h3>
+      <p>2023年北京法院的一起典型案例中，员工利用微信在非工作时间频繁处理工作事务，法院认定构成加班，判令用人单位支付加班费。这一判决被广泛引用，成为隐形加班认定的重要参考。</p>
+      <div class="scene">
+        核心认定标准：加班是否具有"规律性"和"工作性"——偶尔回复消息不算，频繁、持续、带有工作性质的非工时处理，构成加班。
+      </div>
+
+      <h3>企业如何规避隐形加班风险</h3>
+      <p>一是建立明确的工作时间制度，规定非工时不得要求员工处理工作；二是在薪酬结构中明确加班费计算机制；三是避免在企业微信群或工作群中要求员工非工时响应。</p>
+      <div class="risk-box">⚠️ 如果企业客观上存在非工时安排工作的惯例，应当在劳动合同或制度中明确约定，并建立对应的加班审批机制，留好记录。</div>
+
+      <h3>员工在非工时出了意外，算工伤吗？</h3>
+      <p>这取决于事故发生的具体情形。如员工在家处理工作任务期间受伤，需要举证证明与工作任务的直接关联性，认定难度较大，但也有法院支持的先例。建议企业在远程办公制度上提前做好约定。</p>
+    `
+  },
+  a5: {
+    title: '老板注意！这样调薪、扣薪，员工可以直接告你',
+    body: `
+      <p>调薪看起来是企业内部管理行为，但单方操作不当，就可能触碰劳动合同法的红线。</p>
+
+      <h3>哪些调薪操作是违法的？</h3>
+      <p>① <strong>未经协商单方降薪</strong>——劳动合同中约定的工资是合同条款，单方变更必须经过协商一致，否则构成违约。<br>
+      ② <strong>以绩效为由频繁克扣工资</strong>——绩效扣减必须有书面绩效考核制度支撑，且制度须经民主程序制定并公示。<br>
+      ③ <strong>调岗同时降薪</strong>——调岗通常被认定为合同变更，需双方同意。强制调岗+降薪，员工可主张被迫解除，要求赔偿金。</p>
+      <div class="risk-box">⚠️ 员工在以上情形下，可依据《劳动合同法》第38条主张被迫解除劳动合同，并要求经济补偿金——甚至在某些情形下可主张赔偿金（2N）。</div>
+
+      <h3>合规调薪应该怎么做？</h3>
+      <p>一是在合同中约定薪酬调整机制，明确绩效考核与薪酬挂钩的规则；二是任何薪酬变动均需书面确认，留存员工签字的书面协议；三是绩效考核标准须明确、公示，结果员工签字确认。</p>
+
+      <h3>真实案例</h3>
+      <div class="scene">
+        某科技公司以"公司经营困难"为由，将全员基本工资下调20%，仅发出通知，未征得员工同意。三名员工以"被迫解除"为由申请仲裁，均获支持，公司累计赔付约9.6万元。
+      </div>
+    `
+  },
+  a6: {
+    title: '员工上下班途中出了事故，老板要赔多少钱？',
+    body: `
+      <p>工伤认定是企业用工管理中争议最多的领域之一。上下班途中出事算不算工伤？突发疾病呢？不同情形下的结论差异很大。</p>
+
+      <h3>上下班途中发生事故，哪些算工伤？</h3>
+      <p>根据《工伤保险条例》第14条，上下班途中受到非本人主要责任的交通事故，认定为工伤。关键词：<strong>合理路线 + 非本人主要责任</strong>。</p>
+      <div class="scene">
+        注意：绕道买菜、顺路接娃等偏离上下班路线的行为，可能导致不被认定为工伤。"合理路线"的认定在实践中有弹性空间，建议争议时寻求专业意见。
+      </div>
+
+      <h3>突发疾病算工伤吗？</h3>
+      <p>在工作时间和工作岗位上突发疾病，<strong>48小时内经抢救无效死亡的</strong>，视为工伤。超过48小时离世的，通常不被认定。</p>
+      <div class="risk-box">⚠️ 这个"48小时"的规定在实践中引发大量争议——家属为让亲人"在时间内离世"而不得不放弃抢救的两难困境，已成为法律层面的痛点。</div>
+
+      <h3>企业赔偿金额怎么算？</h3>
+      <p>工伤赔偿主要包括：医疗费、停工留薪期工资、一次性伤残补助金、伤残津贴、一次性工亡补助金等。具体金额依据伤残等级、当地社平工资等因素计算，差异悬殊。建议企业提前购置工伤保险，转移风险。</p>
+    `
+  },
+  a7: {
+    title: '老板裁员一步走错，多赔几十万？N和2N傻傻分不清',
+    body: `
+      <p>同样是终止劳动合同，N和2N的差距可能是几十万元。搞清楚这两个概念，是每个老板的必修课。</p>
+
+      <h3>N是什么？什么情况下赔N？</h3>
+      <p><strong>N = 经济补偿金</strong>，按工作年限计算，每满1年支付1个月工资（不满6个月算0.5个月）。适用于：合法解除劳动合同的情形，包括协商解除、无过失性辞退（如裁员）、合同到期不续签等。</p>
+
+      <h3>2N是什么？什么情况下赔2N？</h3>
+      <p><strong>2N = 赔偿金</strong>，是经济补偿金的2倍。适用于：<strong>违法解除劳动合同</strong>的情形——即企业在没有法律依据的情况下解除了合同，或程序不合法。</p>
+      <div class="risk-box">⚠️ 常见违法解除情形：没有合理理由辞退员工、试用期随意辞退、口头解除没有书面通知、规章制度程序不合规导致解除无效等。</div>
+
+      <h3>案例对比</h3>
+      <div class="scene">
+        <strong>案例A（合法解除，赔N）：</strong>某公司经营困难，依法裁员，提前30天书面通知并向劳动行政部门报告，支付经济补偿金共16万元。<br><br>
+        <strong>案例B（违法解除，赔2N）：</strong>某公司以"不适合岗位"为由口头辞退员工，无书面通知、无合法依据，被仲裁认定违法解除，赔偿金32万元。
+      </div>
+
+      <p>一个程序的差错，多赔16万元。这就是合规操作的价值所在。</p>
+    `
+  },
+  a8: {
+    title: '试用期踩雷，老板必看！这4个坑99%的企业都中过',
+    body: `
+      <p>真实案例：某公司试用期辞退员工，最终赔了47万！看完这4个坑，你就知道为什么了。</p>
+
+      <h3>【坑1】试用期时长约定违法</h3>
+      <p>合同期限越长，试用期上限越高，但有严格限制：3年以上合同最长6个月，1-3年最长2个月，3个月-1年最长1个月。<strong>超期约定全部按正式员工标准补差，还要支付赔偿金。</strong></p>
+
+      <h3>【坑2】以"考核不达标"辞退没有书面标准</h3>
+      <p>试用期辞退的合法理由是"不符合录用条件"——而这个"录用条件"必须提前书面确定，并告知员工。事后临时解释的"不达标"，在仲裁庭上基本不被采信。</p>
+      <div class="risk-box">⚠️ 建议在入职时签订书面的《岗位录用条件确认书》，明确具体的量化考核指标，并由员工签字确认。</div>
+
+      <h3>【坑3】试用期不缴社保</h3>
+      <p>很多企业认为试用期是"观察期"，不需要缴纳社保。这是明显误解——自用工之日起，无论是否处于试用期，均应依法为员工缴纳社保。</p>
+
+      <h3>【坑4】试用期内随意调薪</h3>
+      <p>试用期工资不得低于同岗位最低档工资的80%，也不得低于当地最低工资标准。部分企业以"反正是试用期"为由随意克扣，构成违法。</p>
+    `
+  },
+  a9: {
+    title: '合同到期了就可以不续签？老板这样操作分分钟被告',
+    body: `
+      <p>合同到期本来是一个双方可以顺利结束的节点，但很多企业在这里犯了让自己追悔莫及的错误。</p>
+
+      <h3>合同到期不续签，需要支付经济补偿金吗？</h3>
+      <p>需要。只要是用人单位不愿续签（或降低条件导致员工不愿签），均须支付经济补偿金（N）。只有员工主动拒绝续签且企业维持原条件的，才无需支付。</p>
+      <div class="risk-box">⚠️ 很多企业误以为"合同到期就自然结束，什么都不用付"。这是错误的——合同到期终止仍属于需要支付经济补偿的情形之一。</div>
+
+      <h3>什么情况下合同到期也不能终止？</h3>
+      <p>员工在以下情形中，即使合同到期，也不能终止：孕期、产期、哺乳期女员工；患职业病或工伤且尚在医疗期；在本单位连续工作满15年且距法定退休年龄不足5年等。强行终止构成违法解除。</p>
+
+      <h3>续签管理的3个关键动作</h3>
+      <p>① 合同到期前30天主动与员工沟通续签意向，书面通知；<br>
+      ② 如决定终止，出具书面终止通知，明确终止日期和补偿安排；<br>
+      ③ 办理完整的终止手续，出具《解除/终止劳动合同证明书》，为员工办理失业登记。</p>
+    `
+  }
+};
+
+function openArticle(id) {
+  const a = articles[id];
+  if (!a) return;
+  document.getElementById('modalTitle').textContent = a.title;
+  document.getElementById('modalBody').innerHTML = a.body;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeArticle(e) {
+  if (e.target === document.getElementById('modalOverlay')) {
+    closeModalDirect();
+  }
+}
+
+function closeModalDirect() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ESC to close
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModalDirect();
+});
+
+// Contact form
+function handleSubmit() {
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = '✓ 预约成功！我会尽快与您联系';
+  btn.style.background = '#27ae60';
+  btn.disabled = true;
+}
+
+// Navbar active on scroll
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  sections.forEach(s => {
+    const top = s.offsetTop - 80;
+    const bottom = top + s.offsetHeight;
+    if (scrollY >= top && scrollY < bottom) {
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + s.id);
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
